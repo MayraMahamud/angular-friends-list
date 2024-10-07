@@ -1,2 +1,5 @@
 {{ name }}
-<button *ngIf="name" (click)="favorite.emit(name)">Favorite</button>
+<button (click)="favorite.emit(name)">Favorite</button>
+<button (click)="addToFaves(this.name)">Add favorite</button>
+
+

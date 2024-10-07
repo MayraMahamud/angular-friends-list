@@ -10,7 +10,15 @@ export class AppComponent {
   favorite: string = '';
 
   people: string[] = ['lewis', 'jules', 'ed', 'nathan', 'dave', 'nigel'];
+  faves: string[] = ['mayra', 'nigel'];
 
+  addFaves(p:string) {
+    this.faves.push(p);
+
+  }
+
+ 
+  
   addFriend() {
     if (!this.newFriend) {
       return;
